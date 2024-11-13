@@ -1,6 +1,7 @@
 class Palindromo {
     public static void main(String[] args) {
         String cadena = System.console().readLine("Introduce una cadena de caracteres: ");
+        cadena = cadena.toLowerCase().replace(" ", "");
         String cadena_invertida = "";
         for (int i = cadena.length() - 1; i >= 0; i--) {
             cadena_invertida += cadena.charAt(i);
